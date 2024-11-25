@@ -1067,7 +1067,7 @@ void
 tnew(int col, int row)
 {
 	int i;
-	term = (Term){};
+	term = (Term){0};
 	term.screen[0].buffer = xmalloc(HISTSIZE * sizeof(Line));
 	term.screen[0].size = HISTSIZE;
 	term.screen[1].buffer = NULL;
